@@ -1,43 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import CarItem from "./components/CarItem";
+import {View, StyleSheet} from "react-native";
+import {StatusBar} from "expo-status-bar";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <View style={styles.carContainer}>
-        <View style={styles.titles}>
-          <Text style={styles.title}>Model S</Text>
-          <Text style={styles.subtitle}>Starting at $69,420</Text>
-        </View>
-      </View>
-      <StatusBar style="auto" />
-    </View>
+        <View style={styles.container}>
+          <CarItem
+          name="Model S"
+          tagline="Order Online for"
+          taglineCTA="Touchless Delivery"
+          image={require('./assets/images/ModelS.jpeg')}
+          />
+          <StatusBar style="auto" />
+          </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  carContainer: {
-    width:'100%',
-    height:'100%',
-  },
-  titles:{
-    marginTop:'30%',
-    width:'100%',
+    backgroundColor:'#fff',
     alignItems:'center',
-  },
-  title:{
-    fontSize:40,
-    fontWeight:'500',
-  },
-  subtitle:{
-    fontSize:16,
-    color:'#5c5e62',
-  },
+    justifyContent:'center',
+  }
 });

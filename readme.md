@@ -1,15 +1,13 @@
 # Tesla Basic App Clone
 
-
 ## Presentation:
 ## First view
-![MainPage](screenshots/mainpage.jpg?raw=true)
+![MainPage](screenshots/mainpage.jpg?raw=true?raw=true)
 
 ## FlatList
-![FlatListPresentation](screenshots/flatlist.jpg?raw=true)
-
+![FlatListPresentation](screenshots/flatlist.png?raw=true)
 ## Another view
-![AnotherView](screenshots/anotherview.jpg?raw=true)
+![AnotherView](screenshots/anotherview.png?raw=true)
 
 ## Stack:
 - React Native
